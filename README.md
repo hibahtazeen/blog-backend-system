@@ -1,41 +1,34 @@
 # Blog Backend System
 
-A backend API for a blog platform built using Express.js, MySQL, and Sequelize.
-
 ## Features
-- User Registration
-- User Login with JWT Authentication
+- User Registration & Login (JWT Authentication)
 - Create Blog Posts
-- View Blog Posts
+- View All Posts
 - Add Comments to Posts
 - MySQL Database Integration
+- REST API using Express.js
 
-## Technologies Used
+## Tech Stack
 - Node.js
 - Express.js
 - MySQL
 - Sequelize ORM
-- JWT Authentication
-- bcryptjs
-
-## API Endpoints
-
-### Authentication
-- POST /auth/register
-- POST /auth/login
-
-### Posts
-- POST /posts
-- GET /posts
-- GET /posts/:id
-
-### Comments
-- POST /comments
-- GET /comments/:postId
 
 ## Setup Instructions
+npm install  
+node server.js  
 
-1. Install dependencies
+## API Routes
 
-```bash
-npm install
+### Auth
+POST /auth/register  
+POST /auth/login  
+
+### Posts
+POST /posts  
+GET /posts  
+GET /posts/:id  
+
+### Comments
+POST /comments  
+GET /comments/:postId  
